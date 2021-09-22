@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <title>Function as Parameters</title>
+    </head>
+    <body>
+        <script language="Javascript" type="text/javascript">
+           function myFunction1(){
+            document.write("Inside myFunction1");
+        }
+
+        function myFunction2(func){
+            document.write("Inside myFunction2"+"<br>");
+            //myFunction1();
+            func()
+        }
+        function myFunction3(){
+            document.write("Inside myFunction3");
+        }
+        //myFunction1()
+        myFunction2(myFunction3) 
+        </script>
+      
+    </body>
+</html>

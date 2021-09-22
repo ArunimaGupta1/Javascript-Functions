@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Function Object Demo</title>
+    </head>
+    <body>
+        <script language="JavaScript" type="text/javascript">
+            var aFunction = new Function("num1","num2","return num1+num2")
+
+            var bFunction = new Function("document.write('Hello')")
+
+            result = aFunction(10,20)
+            document.write(result)
+
+            bFunction()
+        </script>
+    </body>
+    </html>

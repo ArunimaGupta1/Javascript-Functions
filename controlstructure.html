@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Control Structure</title>
+    </head>
+    <body>
+        <script language="JavaScript" type="text/javascript">
+        var num1 = 25
+        var num2 = 20
+        if(num1>num2){
+        document.write("num1 is >",num2)
+        }
+        else if(num1<num2){
+        document.write("num1 is <",num2)
+        }
+        else{
+            document.write("num1 & num2 are equal")
+        }
+
+        document.write("<hr\>")
+
+        var grade = 'B'
+        switch(grade){
+            case 'A':
+                document.write("Great Job")
+                break
+            case 'B':
+                document.write("Good Job")
+                break
+            case 'C':
+                document.write("Can do better")
+                break
+            case 'D':
+                document.write("Better luck next time")
+                break
+            default:
+                document.write("Unknown grade")
+        }
+        document.write("<br><hr>")
+        for(var counter=0;counter<10;counter++){
+            document.write("Counter is :"+counter+"<br>")
+        }
+        document.write("<hr>")
+
+        var aProperty
+        for(aProperty in navigator){
+            document.write(aProperty+"<br>")
+        }
+        document.write("<hr>")
+
+        var count = 0
+
+        while(count<10){
+            document.write("Count: "+count+"<br>")
+            count++
+        }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Callback</title>
+    </head>
+    <body>
+        <script language="Javascript" type="text/javascript">
+        function display1(){
+            document.write("This is a callback function1")
+        }
+        function display2(){
+            document.write("This is a callback function2")
+        }
+        function display3(){
+            document.write("This is a callback function3")
+        }
+        function calTotal(num1,num2,callback){
+             var result = num1+num2
+             document.write(result+"<br>")
+             callback()
+        }
+
+        calTotal(10,20,display2)
+        </script>
+    </body>
+    </html>

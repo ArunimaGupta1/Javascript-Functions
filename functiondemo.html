@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Function Demo</title>
+        <script language="JavaScript" type="text/javascript">
+            printHello()
+            function dispInfo(){
+              document.write("Display Info method")
+          }
+          </script>
+    </head>
+    <body>
+        <script language="JavaScript" type="text/javascript">
+          function printHello(){
+              document.write("Hello World")
+          }
+
+          function greetName(name){
+              document.write("Hello "+name)
+          }
+
+          function concatenate(firstname,lastname){
+              document.write(firstname+" "+lastname)
+          }
+
+          function add(num1,num2){
+              var result = num1+num2
+              document.write(result)
+          }
+
+          function sayHelloUser(){
+              return "Hello User"
+          }
+
+
+          printHello()
+          document.write("<br>")
+          dispInfo()
+          document.write("<br>")
+          greetName("John")
+          document.write("<br>")
+          concatenate("John","Smith")
+          document.write("<br>")
+          add(2,3)
+          document.write("<br>")
+          var returnedValue = sayHelloUser()
+          document.write(returnedValue)
+          document.write("<br>")
+          document.write(sayHelloUser())
+
+        </script>
+    </body>
+</html>

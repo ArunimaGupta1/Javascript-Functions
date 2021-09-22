@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Arrow Function</title>
+    </head>
+    <body>
+        <script language="Javascript" type="text/javascript">
+             function add(num1,num2){
+                 return num1+num2
+             }
+              
+
+             //fat arrow function is introduced in ES6
+             //let is also introduced in ES6
+             let sum = (num1,num2) => num1+num2
+             let sayHello = () => document.write("Hello World")
+
+             document.write(sum(23,67))
+             document.write("<br>")
+             document.write(add(100,200))
+             document.write("<br>")
+             sayHello()
+        </script>
+    </body>
+</html>

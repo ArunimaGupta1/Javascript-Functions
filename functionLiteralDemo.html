@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Function Literal Demo</title>
+    </head>
+    <body>
+        <script language="JavaScript" type="text/javascript">
+           var function1 = function(){
+               document.write("This is function literal")
+           }
+
+           var function2 = function (name) {
+               document.write(name)
+               
+           }
+
+           var function3 = function(){
+               return "Hello from Function literal"
+           }
+
+           var function4 = function (num1,num2) {
+               return num1+num2
+           }
+
+           function1()
+           document.write("<hr>")
+           function2("John")
+           document.write("<hr>")
+           document.write(function3())
+           document.write("<hr>")
+           document.write(function4(2,6))
+           document.write("<hr>")
+        </script>
+    </body>
+</html>
